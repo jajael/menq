@@ -114,6 +114,15 @@ div#search-site {
 
 /* VIDEO YOUTUBE */
 
+#top-menu #text-top-menu {
+	display: none;
+}
+
+/* exibe o youtube somente na home */
+#index #top-menu #text-top-menu {
+	display: block;
+}
+
 .embeddedContent.oembed-provider-.oembed-provider-youtube {
     width: 810px;
     height: 400px;
