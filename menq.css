@@ -115,6 +115,7 @@ div#search-site {
 
 /* VIDEO YOUTUBE */
 
+/* esconde o youtube em todas as páginas */
 #top-menu #text-top-menu {
 	display: none;
 }
@@ -122,6 +123,12 @@ div#search-site {
 /* exibe o youtube somente na home */
 #index #top-menu #text-top-menu {
 	display: block;
+  width: 100%;
+}
+
+/* centraliza o vídeo */
+#index #top-menu #text-top-menu p {
+	text-align: center;
 }
 
 .embeddedContent.oembed-provider-.oembed-provider-youtube {
@@ -145,7 +152,6 @@ section#top-menu .container .row .col-sm-6:nth-child(1) {
 
 #youtube {
 	border: 0 !important;
-	width: 100%;
 	margin-top: 10px;
 }
 /*
@@ -153,9 +159,25 @@ section#top-menu .hidden-xs {
 	display: block !important;
 }*/
 
-div#text-top-menu.col-sm-6 {
-  /*width: 57.2%;*/
-  width: 100%;
+/* IDIOMAS */
+
+/* aumenta a largura do menu de login + idiomas */
+#top-menu .text-right {
+	width: 100%;
+}
+
+/* mostra as bandeirinhas no mobile */
+@media (max-width: 767px) {
+	#top-menu .navbar-right {
+		display: block !important;
+		margin-left: 0;
+	}
+}
+
+/* centraliza o menu hamburguer */
+#top-menu .navbar-header .navbar-toggle {
+	float: none;
+	margin-right: 0;
 }
 
 /*PARTE DE CIMA */
@@ -188,11 +210,17 @@ div.row .col-sm-6.text-right:nth-child(2) {
 	padding-top: 20px;
 }
 
-/*
-#logotipo-search div.container div.row div.col-sm-4 {
-	margin-left: 36%;
+/* centraliza o logotipo */
+#logotipo-search .col-sm-4 {
+	width: 100%;
+	text-align: center;
 }
 
+#logotipo-search .col-sm-4 a {
+	display: inline-block;
+}
+
+/* 
 #logotipo-search img {
 	width: 140px;
 }*/
