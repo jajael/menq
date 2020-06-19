@@ -270,6 +270,11 @@ div.row .col-sm-6.text-right:nth-child(2) {
     font-weight: 900;
 }
 
+/* permite o banner "oficina do sonhaço" encolher sem distorcer a imagem  */
+#slider .item img {
+	min-height: auto;
+}
+
 /* CURSOS */
 
 #ticket {
